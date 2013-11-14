@@ -1,0 +1,9 @@
+---
+applications:
+- name: gang
+  memory: 256M
+  instances: 1
+  host: gang
+  domain: cfapps.io
+  path: .
+  command: node app.js

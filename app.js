@@ -74,4 +74,4 @@ app.get('*', function(req, res) {
     });  
 })  
   
-app.listen(3000);
+app.listen(process.env.VCAP_APP_PORT || 3000);
