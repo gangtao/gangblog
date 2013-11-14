@@ -1,51 +1,64 @@
 extends layout
 
 block content
-	div.navbar.navbar-fixed-top
-		div.navbar-inner
-			div.container
-				a.brand(href='#') #{title}
-				ul.nav
-					li
-						a(href='#') Home
-					li
-						a(href='#') Link
-					li
-						a(href='#') Link
+	nav.navbar.navbar-default.navbar-fixed-top		
+		div.container
+			div.navbar-header
+				a.navbar-brand(href='#') #{title}									
+			ul.nav.navbar-nav
+				li
+					a(href='#') Home
+				li
+					a(href='#') Link
+				li
+					a(href='#') Link
 	div.container
-		div.row-fluid.show-grid
+		div.row-fluid
 			div.row
-				div.span8
-					div.well
-						ul
-							li
-								a(href='/go/index.html') 围棋 
-								p 给女儿学围棋写了一个小程序，使用jquery,d3和bootatrap大家多提bug ：）
-								p 这里给出源代码，可离线运行		
-								a(href='/download/go.zip') 点我
-								p 2013.4.3 修正以下错误
-									ul
-										li
-											p 悔棋后气的计算出错导致无法正确提子
-										li
-											p 增加影子提示
-										li
-											p 修正了播放声音是的对象回收问题
-							li
-								a(href='/how/index.html') 理论是怎样建立的
-								p 非常喜欢@科学松鼠会的这个图，用d3做了一个动画版 
-							li
-								a(href='/visualattributes/index.html') 数据可视化中的视觉属性
-								p 
-							li
-								a(href='/fractual/index.html') 数学之美，三角形分形
-								p 
-							li
-								a(href='http://www.csser.com/board/4f3f516e38a5ebc978000508')  使用Jade快速制作html
-							li
-								a(href='http://wowubuntu.com/markdown/') Markdown语法
-				div.span4
-					div.well
-						p introduction
-					div.well
-						i.icon-search
+				div.col-md-8
+					div.panel.panel-default
+						div.panel-heading 目录
+						div.panel-body
+							ul
+								li
+									a(href='/go/index.html') 围棋 
+									p 给女儿学围棋写了一个小程序，使用jquery,d3和bootatrap大家多提bug ：）
+									p 这里给出源代码，可离线运行		
+									a(href='/download/go.zip') 点我
+									p 2013.4.3 修正以下错误
+										ul
+											li
+												p 悔棋后气的计算出错导致无法正确提子
+											li
+												p 增加影子提示
+											li
+												p 修正了播放声音是的对象回收问题
+								li
+									a(href='/how/index.html') 理论是怎样建立的
+									p 非常喜欢@科学松鼠会的这个图，用d3做了一个动画版 
+								li
+									a(href='/visualattributes/index.html') 数据可视化中的视觉属性
+									p 
+								li
+									a(href='/fractual/index.html') 数学之美，三角形分形
+									p 
+								li
+									a(href='http://www.csser.com/board/4f3f516e38a5ebc978000508')  使用Jade快速制作html
+								li
+									a(href='http://wowubuntu.com/markdown/') Markdown语法
+				div.col-md-4
+					div.panel.panel-default
+						div.panel-heading Intorudction
+						div.panel-body
+							p linkedin
+								a(href='http://www.linkedin.com/in/taogang') http://www.linkedin.com/in/taogang
+							p weibo 
+								a(href='http://weibo.com/gangtao') http://weibo.com/gangtao
+							p douban 
+								a(href='http://www.douban.com/people/taogang/') http://www.douban.com/people/taogang/
+							p gitbub 
+								a(href='https://github.com/gangtao/') https://github.com/gangtao/
+					div.panel.panel-default
+						div.panel-heading Serach
+						div.panel-body
+							i.icon-search
