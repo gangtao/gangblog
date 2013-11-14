@@ -1,0 +1,14 @@
+--- 
+applications: 
+- memory: 256M
+  name: gangtao
+  services: 
+    mongodb-edeb2: 
+      tier: free
+      vendor: mongodb
+      version: "2.0"
+  path: .
+  framework: node
+  instances: 1
+  url: gangtao.${target-base}
+  runtime: node08
